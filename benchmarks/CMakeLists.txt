@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.2)
+project(pystring_bench CXX)
+set(CMAKE_CXX_STANDARD 17)
+include_directories(../)
+add_executable (pystring_bench benchmark.cpp  nanobench.h ../pystring.cpp ../pystring.h)
