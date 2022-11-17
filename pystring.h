@@ -148,9 +148,9 @@ namespace pystring
     /// be the text before sep, sep itself, and the remaining text. If sep is
     /// not found, the original string will be returned with two empty strings.
     ///
-    void partition(const std::string &str, const std::string &sep, std::vector<std::string> &result);
+    void partition(std::string_view str, std::string_view sep, std::vector<std::string> &result);
 
-    inline std::vector<std::string> partition(const std::string &str, const std::string &sep)
+    inline std::vector<std::string> partition(std::string_view str,std::string_view sep)
     {
         std::vector<std::string> result;
         partition(str, sep, result);

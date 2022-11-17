@@ -449,7 +449,7 @@ namespace pystring
     //////////////////////////////////////////////////////////////////////////////////////////////
     ///
     ///
-    void partition(const std::string &str, const std::string &sep, std::vector<std::string> &result)
+    void partition(std::string_view str,  std::string_view sep, std::vector<std::string> &result)
     {
         result.resize(3);
         int index = find(str, sep);
